@@ -158,6 +158,7 @@ textarea {
     -webkit-appearance: none;
     -ms-appearance: none;
     appearance: none;
+    resize: none;
 }
 
 
