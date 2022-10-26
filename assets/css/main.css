@@ -3079,7 +3079,8 @@ body.is-preload #wrapper.fade-in:before {
     -webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
     -ms-transition: opacity 1s ease, -ms-transform 1s ease;
     transition: opacity 1s ease, transform 1s ease;
-    position: relative;
+    position: sticky;
+    top: 0px;
     cursor: default;
     text-align: center;
     z-index: 1;
@@ -3292,7 +3293,7 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
     padding-bottom: 8rem;
     position: relative;
     text-align: center;
-    z-index: 2;
+    z-index: 99;
 }
 
 #header input,
@@ -3304,6 +3305,8 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 #header a {
     color: #ffffff;
     border-bottom-color: rgba(255, 255, 255, 0.5);
+    position: sticky;
+    top: 0px;
 }
 
 #header a:hover {
@@ -3345,7 +3348,7 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
     transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.5s ease, transform 0.5s ease, visibility 0.5s;
     pointer-events: auto;
     border-style: solid;
-    border-color: #ffffff;
+    border-color: white;
     border-width: 5px !important;
     font-family: "Source Sans Pro", Helvetica, sans-serif;
     font-size: 2.25rem;
@@ -3355,8 +3358,11 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
     padding: 1rem 1.75rem;
     text-transform: uppercase;
     visibility: visible;
-    top: 70px;
-    position: sticky;
+    top: 0px;
+    position: fixed;
+    z-index: 99 !important;
+    display: inline-block !important;
+    background-color: rgba(255, 197, 45, 255);
 }
 
 #header .logo:hover {
