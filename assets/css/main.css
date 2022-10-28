@@ -3079,8 +3079,6 @@ body.is-preload #wrapper.fade-in:before {
     -webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
     -ms-transition: opacity 1s ease, -ms-transform 1s ease;
     transition: opacity 1s ease, transform 1s ease;
-    position: sticky;
-    top: 0px;
     cursor: default;
     text-align: center;
     z-index: 1;
@@ -3305,8 +3303,6 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 #header a {
     color: #ffffff;
     border-bottom-color: rgba(255, 255, 255, 0.5);
-    position: sticky;
-    top: 0px;
 }
 
 #header a:hover {
