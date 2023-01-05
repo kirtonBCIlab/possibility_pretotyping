@@ -2487,12 +2487,12 @@ a.image img {
     transition: transform 0.2s ease-out;
 }
 
-a.image:hover img {
+/* a.image:hover img {
     -moz-transform: scale(1.05);
     -webkit-transform: scale(1.05);
     -ms-transform: scale(1.05);
     transform: scale(1.05);
-}
+} */
 
 /* Actions */
 
@@ -3057,7 +3057,7 @@ table.alt tbody tr td {
     width: 100%;
     height: 100%;
     background-color: #212931;
-    background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/PNGs/BCI4Kids_PurpleLogoBKG_Small.png");
+    background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/PNGs/PurpleSquare.png");
     background-size: auto, auto, 100% auto;
     background-position: center, center, top center;
     background-repeat: repeat, no-repeat, no-repeat;
@@ -3390,6 +3390,7 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
     position: relative;
     text-align: center;
     z-index: 99;
+    overflow: hidden;
 }
 
 #header input,
@@ -3400,7 +3401,7 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 
 #header a {
     color: #ffffff;
-    border-bottom-color: rgba(255, 255, 255, 0.5);
+    border-bottom-color: none;
 }
 
 #header a:hover {
@@ -3588,32 +3589,37 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
     -webkit-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.5s ease, -webkit-transform 0.5s ease, visibility 0.5s;
     -ms-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.5s ease, -ms-transform 0.5s ease, visibility 0.5s;
     transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.5s ease, transform 0.5s ease, visibility 0.5s;
-    display: -moz-flex;
+    /* display: -moz-flex;
     display: -webkit-flex;
     display: -ms-flex;
-    display: flex;
-    -moz-flex-grow: 1;
+    display: flex; */
+    display: inline-block;
+    /* -moz-flex-grow: 1;
     -webkit-flex-grow: 1;
     -ms-flex-grow: 1;
     flex-grow: 1;
     -moz-flex-shrink: 1;
     -webkit-flex-shrink: 1;
     -ms-flex-shrink: 1;
-    flex-shrink: 1;
+    flex-shrink: 1; */
     font-family: "Source Sans Pro", Helvetica, sans-serif;
     font-weight: 900;
     letter-spacing: 0.075em;
     list-style: none;
     margin-bottom: 0;
-    padding-left: 0;
+    align-items: center;
     text-transform: uppercase;
     position: fixed;
     top: 0rem;
+    width: calc(100% - 4rem);
+    max-width: 72rem;
+    padding: 0;
 }
 
 #nav ul.links li {
     display: inline-block;
     padding-left: 0;
+    /* flex-grow: 1; */
 }
 
 #nav ul.links li a {
@@ -3622,7 +3628,7 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
     -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
     transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
     display: block;
-    font-size: 0.8rem;
+    font-size: 2.5rem;
     outline: none;
     padding: 0 2rem;
 }
@@ -3632,9 +3638,9 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-#nav ul.links li.active {
+/* #nav ul.links li.active {
     background-color: #ffffff;
-}
+} */
 
 #nav ul.links li.active a {
     color: #1e252d;
@@ -3645,23 +3651,25 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 }
 
 #header ul.links li {
-    display: inline-block;
-    padding-left: 0;
+    /* display: inline-block; */
+    width: 100%;
+    height: 100%;
 }
 
 #header ul.links li a {
-    -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-    -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-    -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border 0.2s ease-in-out, color 0.2s ease-in-out;
+    -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border 0.2s ease-in-out, color 0.2s ease-in-out;
+    -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border 0.2s ease-in-out, color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border 0.2s ease-in-out, color 0.2s ease-in-out;
     display: block;
-    font-size: 0.8rem;
+    font-size: 2.5rem;
     outline: none;
-    padding: 0 2rem;
+    /* padding: 0 2rem; */
 }
 
 #header ul.links li a:hover {
     color: inherit !important;
+    border: solid 2px white;
     background-color: rgba(255, 255, 255, 0.1);
 }
 

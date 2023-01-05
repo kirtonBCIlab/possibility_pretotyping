@@ -226,7 +226,7 @@
             $main.scrollex({
                 mode: 'bottom',
                 top: '60vh',
-                bottom: '-90vh',
+                bottom: '50vh',
                 enter: function() {
                     $intro.addClass('hidden');
                 },
