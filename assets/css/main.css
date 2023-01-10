@@ -2447,6 +2447,18 @@ input[type="radio"]:focus+label:before {
     width: 100%;
 }
 
+.image.minor  {
+    display: block;
+    margin: 1.5rem 0;
+    width: 100%;
+}
+
+.image.minor img {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .image.main {
     display: block;
     margin: 4rem 0;
@@ -2770,11 +2782,26 @@ header.major {
     border-bottom: none !important;
 }
 
+header.minor {
+    width: 100% !important;
+    text-align: center;
+    border-bottom: none !important;
+}
+
 header.major> :last-child {
     margin-bottom: 0;
 }
 
+/* header.minor> :last-child {
+    margin-bottom: 0;
+} */
+
 header.major>p {
+    margin-top: 0;
+    text-align: center;
+}
+
+header.minor>p {
     margin-top: 0;
     text-align: center;
 }
@@ -3131,7 +3158,7 @@ body.is-preload #wrapper.fade-in:before {
     cursor: default;
     text-align: center;
     z-index: 1;
-    min-height: 60vh;
+    /* min-height: 60vh; */
 }
 
 #intro input,
@@ -3760,6 +3787,13 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
     font-size: 4rem;
     line-height: 1.1;
     margin: 0 0 2rem 0;
+}
+
+#main>.post header.minor>h1,
+#main>.post header.minor h2 {
+    font-size: 2rem;
+    line-height: 1.1;
+    margin: 0 0 1rem 0;
 }
 
 #main>.post.featured {
