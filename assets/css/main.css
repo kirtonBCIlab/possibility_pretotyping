@@ -3431,7 +3431,7 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 
 #header a {
     color: #ffffff;
-    border-bottom-color: none;
+    /* border-bottom-color: none; */
 }
 
 #header a:hover {
@@ -3714,7 +3714,7 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
     -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border 0.2s ease-in-out, color 0.2s ease-in-out;
     transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border 0.2s ease-in-out, color 0.2s ease-in-out;
     display: block;
-    background-color: #683484;
+    background-color: #C3B1E1;
     color: white;
     border: 2px solid white;
     font-size: 2.5rem;
